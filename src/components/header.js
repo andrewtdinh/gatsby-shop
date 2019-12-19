@@ -46,6 +46,8 @@ const Header = ({ siteTitle }) => (
 
       <NavLink to="/products">Store</NavLink>
 
+      <div data-netlify-identity-menu></div>
+
       {/** Shopping Cart Summary */}
       <div 
         className="snipcart-summary snipcart-checkout"
