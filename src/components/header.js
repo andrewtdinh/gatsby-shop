@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import netlifyIdentity from 'netlify-identity-widget'
 
 import gatsbyLogo from '../images/gatsby-icon.png';
 
@@ -11,7 +12,11 @@ const isActive = ({ isCurrent }) => {
 const NavLink = props => <Link getProps={isActive} {...props} />
 
 class Header extends React.Component {
+  componentDidMount() {
+    netlifyIdentity.init();
+  }
   render() {
+    const { siteTitle } = this.props;
     return (
       <header
         style={{
