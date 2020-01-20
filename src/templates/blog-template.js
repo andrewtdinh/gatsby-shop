@@ -3,26 +3,26 @@ import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
 
-const getMarkdownPosts = graphql`
-  {
-    allMarkdownRemark {
-      totalCount
-      edges {
-        node {
-          fields {
-            slug
-          }
-          id
-          frontmatter {
-            title,
-            date
-          }
-          excerpt
-        }
-      }
-    }
-  }
-`
+// const getMarkdownPosts = graphql`
+//   {
+//     allMarkdownRemark {
+//       totalCount
+//       edges {
+//         node {
+//           fields {
+//             slug
+//           }
+//           id
+//           frontmatter {
+//             title,
+//             date
+//           }
+//           excerpt
+//         }
+//       }
+//     }
+//   }
+// `
 
 export default ({ data, pageContext }) => {
   const { currentPage, isFirstPage, isLastPage, totalPages } = pageContext;
