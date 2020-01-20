@@ -638,6 +638,11 @@ pre tt:after {
 
 /* Netlify Identity */
 
+.netlify-identity-menu {
+  list-style: none;
+  color: white;
+}
+
 .netlify-identity-signup {
   color: white;
 }
