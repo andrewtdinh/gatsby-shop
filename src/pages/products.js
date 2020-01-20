@@ -6,15 +6,20 @@ import netlifyIdentity from 'netlify-identity-widget';
 import Layout from '../components/layout';
 
 class Products extends React.Component {
+  state = {
+    products: []
+  }
+
   componentDidMount() {
     this.getProducts();
   }
 
   getProducts = () => {
     const allProducts = this.props.data.allContentfulProduct.edges
-    netlifyIdentity.currentUser !== null ? 
+    const products = netlifyIdentity.currentUser !== null ? 
       allProducts :
       allProducts.filter(({ node: product }) => !product.private)
+    this.setState({ products });
   }
 
   render() {
