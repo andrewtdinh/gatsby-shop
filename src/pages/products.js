@@ -23,13 +23,13 @@ class Products extends React.Component {
   }
 
   render() {
-    const { data: { allContentfulProduct } } = this.props;
+    const { products } = this.state;
     return (
       <Layout>
         <div>
           {/* Product List */}
           <h2>Garb Products</h2>
-          {allContentfulProduct.edges.map(({ node: product }) => (
+          {products.map(({ node: product }) => (
             <div key={product.id}>
               <Link 
                 to={`/products/${product.slug}`} 
