@@ -635,3 +635,13 @@ pre tt:after {
 .navlink {
   color: white;
 }
+
+/* Netlify Identity */
+
+.netlify-identity-signup {
+  color: white;
+}
+
+.netlify-identity-login {
+  color: white;
+}
