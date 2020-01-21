@@ -12,11 +12,13 @@ class Products extends React.Component {
 
   componentDidMount() {
     this.getProducts();
+    netlifyIdentity.on('login', (user) => this.getProducts(user));
+    netlifyIdentity.on('logout', () => this.getProducts());
   }
 
-  getProducts = () => {
+  getProducts = (user) => {
     const allProducts = this.props.data.allContentfulProduct.edges
-    const products = netlifyIdentity.currentUser !== null ? 
+    const products = netlifyIdentity.currentUser() !== null ? 
       allProducts :
       allProducts.filter(({ node: product }) => !product.private)
     this.setState({ products });
