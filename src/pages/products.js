@@ -21,6 +21,7 @@ class Products extends React.Component {
     const products = netlifyIdentity.currentUser() !== null ? 
       allProducts :
       allProducts.filter(({ node: product }) => !product.private)
+
     this.setState({ products });
   }
 
@@ -73,6 +74,7 @@ export const query = graphql`
             ...GatsbyContentfulFluid_tracedSVG
           }
         }
+        private
       }
     }
   }
