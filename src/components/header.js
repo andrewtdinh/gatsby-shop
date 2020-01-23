@@ -10,6 +10,7 @@ const isActive = ({ isCurrent }) => {
 }
 
 const NavLink = props => <Link getProps={isActive} {...props} />
+const headerFooterBgColor = "#0b5091"
 
 class Header extends React.Component {
   componentDidMount() {
@@ -20,7 +21,7 @@ class Header extends React.Component {
     return (
       <header
         style={{
-          background: `rebeccapurple`,
+          background: headerFooterBgColor,
           marginBottom: `1.45rem`,
         }}
       >
