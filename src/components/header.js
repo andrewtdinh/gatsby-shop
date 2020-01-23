@@ -49,10 +49,13 @@ class Header extends React.Component {
               </NavLink>
             </h1>
           </span>
-
+          
+          
+          {/*  // Temporarily disable the links in the Header
+          
           <NavLink to="/blog">Blog</NavLink>
 
-          <NavLink to="/products">Store</NavLink>
+          <NavLink to="/products">Store</NavLink> */}
 
           <div data-netlify-identity-menu></div>
 
