@@ -33,7 +33,7 @@ export default ({ data, pageContext }) => {
     <Layout>
       <div>
         <h1 style={{ display: 'inlineBlock', borderBottom: '1px solid'}}
-        >Gatsby Garb Blog</h1>
+        >{`Mom & Pop Store`}</h1>
           <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div key={node.id}>
