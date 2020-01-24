@@ -1,3 +1,3 @@
-# Gatsby Garb
+# Mom & Pop Store
 
-#### A sample Gatsby blog/shop with a cart
+#### A sample Gatsby shop with a cart
