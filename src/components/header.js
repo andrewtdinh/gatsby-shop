@@ -33,7 +33,7 @@ class Header extends React.Component {
             justifyContent: 'space-between',
             margin: `0 auto`,
             maxWidth: 960,
-            padding: `1.45rem 1.0875rem`,
+            padding: `0.3rem 1.0rem`,
           }}
         >
           {/* Title and Logo area */}
@@ -44,7 +44,7 @@ class Header extends React.Component {
             }}/>
             <h1 style={{ margin: 0 }}>
               <NavLink to="/">
-                {siteTitle}
+                {/* {siteTitle} */}
               </NavLink>
             </h1>
           </span>
