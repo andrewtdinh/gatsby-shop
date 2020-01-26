@@ -3,7 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import netlifyIdentity from 'netlify-identity-widget'
 
-import gatsbyLogo from '../images/gatsby-icon.png';
+// import gatsbyLogo from '../images/gatsby-icon.png';
+import storeIcon from '../images/MomPopStoreLogo_large.png';
 
 const isActive = ({ isCurrent }) => {
   return { className: isCurrent ? 'active' : 'navlink' }
@@ -37,7 +38,7 @@ class Header extends React.Component {
         >
           {/* Title and Logo area */}
           <span style={{display: "flex", alignItems: 'center'}}>
-            <img src={gatsbyLogo} alt="Gatsby Garb Logo" style={{
+            <img src={storeIcon} alt="Mom Pop Store Logo" style={{
               width: "50px",
               margin: "0 10px 0 0",
               border: "3px solid orange",
