@@ -39,10 +39,8 @@ class Header extends React.Component {
           {/* Title and Logo area */}
           <span style={{display: "flex", alignItems: 'center'}}>
             <img src={storeIcon} alt="Mom Pop Store Logo" style={{
-              width: "50px",
-              margin: "0 10px 0 0",
-              border: "3px solid orange",
-              borderRadius: "50%"
+              width: "250px",
+              margin: "0 10px 0 -8px",
             }}/>
             <h1 style={{ margin: 0 }}>
               <NavLink to="/">
