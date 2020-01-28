@@ -31,7 +31,7 @@ class Products extends React.Component {
       <Layout>
         <div>
           {/* Product List */}
-          <h2>Garb Products</h2>
+          <h2>Store Products</h2>
           {products.map(({ node: product }) => (
             <div key={product.id}>
               <Link 
